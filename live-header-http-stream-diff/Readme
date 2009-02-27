@@ -5,3 +5,7 @@ comparing http streams from liveheaders in firefox hurts your eyes
 solution:
 
 'explode' the streams in to lots of sepperate lines, and use diff 
+
+./packet-explode file1 file2
+
+where files are saved very similar strems
