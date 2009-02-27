@@ -1,0 +1,15 @@
+problem:
+
+making an extension for firefox, you have to restart firefox to reload your extension
+
+solution:
+
+./quick-firefox URL
+
+kills all firefox
+opens firefox using a dev profile (which you've made previously)
+sends firefox to a url
+
+failure points:
+don't have a dev profile yet?
+suggested to turn off session restore for your def profile

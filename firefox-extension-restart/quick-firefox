@@ -1,0 +1,2 @@
+kill `ps aux | grep firefox | grep -v grep | cut -c 10-15`
+/Applications/Firefox.app/Contents/MacOS/firefox -P "default" -no-remote -console -new-window $1
