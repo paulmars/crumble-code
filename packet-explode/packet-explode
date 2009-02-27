@@ -1,0 +1,5 @@
+awk '{gsub(": ", "\n\n");print}' $1 > 1.tmp
+awk '{gsub(": ", "\n\n");print}' $2 > 2.tmp
+diff 1.tmp 2.tmp
+rm 1.tmp 
+rm 2.tmp
