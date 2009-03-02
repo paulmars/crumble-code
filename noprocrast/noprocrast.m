@@ -56,7 +56,7 @@ struct loggedEvent {
 CGEventRef cfEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon) {
   NSAutoreleasePool *pool = [NSAutoreleasePool new]; 
 
-  NSEvent *e = [[NSEvent eventWithCGEvent:event] autorelease];
+  NSEvent *e = [NSEvent eventWithCGEvent:event];
   
   if(type == lastEventType && (type == kCGEventMouseMoved || type == kCGEventScrollWheel)) {
     if([e timestamp] - lastCompressableEventTime < 0.2) {
